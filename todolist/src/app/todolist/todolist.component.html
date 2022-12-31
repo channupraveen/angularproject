@@ -1,0 +1,13 @@
+<form (submit)="addtolist()">
+    <div>
+
+        <input type="text" name="inputvalues" placeholder="enter a value" [(ngModel)]="inputvalues" />
+        <input type="submit" value="addtolist" />
+      
+<div *ngFor="let x of todolist">
+    {{x}}
+    <button (click)="remove(x)">remove</button>
+
+</div>
+</div>
+</form>
