@@ -6,13 +6,15 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { TodolistComponent } from './todolist/todolist.component';
 import { FormsModule } from '@angular/forms';
+import { DateComponent } from './date/date.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    TodolistComponent
+    TodolistComponent,
+    DateComponent
   ],
   imports: [
     BrowserModule,
