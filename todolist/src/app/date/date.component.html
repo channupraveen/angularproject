@@ -1,0 +1,9 @@
+<p>date works!</p>
+<form #myForm="ngForm">
+    <label for="dateInput">Enter a date:</label>
+    <input type="date" name="dateInput" ngModel required #dateInput="ngModel" (ngModelChange)="validateDate(dateInput)">
+
+    <div *ngIf="dateInput.errors?. ['futureDate']">Date cannot be in the future.</div>
+    <button type="submit" [disabled]="myForm.invalid">Submit</button>
+  </form>
+  
